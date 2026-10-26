@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan System Tour</title>
+<meta name="description" content="A 2-minute tour of a loan system built for lending companies: payments, loans, vouchers, reports and collector phone screens. Book a demo.">
+<meta property="og:title" content="A loan system built around how your branches work">
+<meta property="og:description" content="Watch the 2-minute tour and book a 20-minute demo.">
+<meta property="og:image" content="images/video-poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f7f7f5; --card: #fff; --fg: #111; --muted: #5c5c5c; --line: #e6e6e1; --accent: #1f5fd6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: Geist, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 72px 0 40px; }
+  .kicker { font: 500 14px 'Geist Mono', monospace; color: var(--accent); letter-spacing: .04em; text-transform: uppercase; margin: 0 0 16px; }
+  h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.04; letter-spacing: -0.035em; font-weight: 500; margin: 0 0 20px; max-width: 900px; }
+  .lede { font-size: 19px; line-height: 1.55; color: var(--muted); max-width: 680px; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--fg); color: #fff; text-decoration: none; font-weight: 500; font-size: 16px; padding: 14px 26px; border-radius: 10px; }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); margin-left: 8px; }
+  video { width: 100%; display: block; border-radius: 14px; border: 1px solid var(--line); background: #000; box-shadow: 0 20px 50px rgba(0,0,0,.08); }
+  .note { font-size: 13px; color: #8a8a8a; text-align: center; margin: 12px 0 0; }
+  section { padding: 72px 0 0; }
+  h2 { font-size: clamp(26px, 3.5vw, 36px); letter-spacing: -0.025em; font-weight: 500; margin: 0 0 10px; }
+  .sub { color: var(--muted); font-size: 17px; line-height: 1.55; margin: 0 0 28px; max-width: 640px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .feat { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .feat img { width: 100%; display: block; border-bottom: 1px solid var(--line); }
+  .feat .phone { background: #efefeb; padding: 20px 0; text-align: center; border-bottom: 1px solid var(--line); }
+  .feat .phone img { width: 150px; border: 1px solid var(--line); border-radius: 14px; display: inline-block; }
+  .feat div.t { padding: 18px 20px 22px; }
+  .feat b { display: block; font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+  .feat p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+  .wide { grid-column: 1 / -1; }
+  .list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; padding: 0; margin: 0; list-style: none; }
+  .list li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; font-size: 15px; line-height: 1.45; }
+  .list li::before { content: '✓'; color: var(--accent); font-weight: 600; margin-right: 10px; }
+  footer { padding: 64px 0 48px; color: #8a8a8a; font-size: 14px; }
+  @media (max-width: 720px) {
+    header { padding-top: 48px; }
+    .grid { grid-template-columns: 1fr; }
+    .btn.ghost { margin: 10px 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Loan system for lending companies</p>
+    <h1>We build loan systems around how your branches already work.</h1>
+    <p class="lede">From the collector's route to the president's dashboard: payments, loans, vouchers and reports in one fast, modern system, set up for your own products and forms.</p>
+    <a class="btn" href="#book">Book a 20-minute demo</a><a class="btn ghost" href="#tour">Watch the tour</a>
+  </header>
+
+  <div id="tour">
+    <video controls playsinline preload="metadata" poster="images/dashboard.jpg">
+      <source src="tour.mp4" type="video/mp4">
+    </video>
+    <p class="note">2-minute tour, no narration. All data shown is sample data.</p>
+  </div>
+
+  <section>
+    <h2>Encode collections without touching the mouse</h2>
+    <p class="sub">Pick the route, pick the account, type the cash, press Ctrl + S. The system splits each payment into amortization, penalty and safekeeping, then posts the official receipt.</p>
+    <div class="grid">
+      <div class="feat wide"><img src="images/encode.gif" alt="A payment encoded with the keyboard only" loading="lazy"></div>
+      <div class="feat"><img src="images/new-loan.jpg" alt="New loan form with the payment schedule" loading="lazy"><div class="t"><b>File, approve, release</b><p>The full schedule, interest and net proceeds worked out as you type. Approval and release by the right people only.</p></div></div>
+      <div class="feat"><img src="images/report.jpg" alt="Daily target of collectors report" loading="lazy"><div class="t"><b>Reports ready to print</b><p>Daily targets, collections, aging, the loan ledger and the cash receipts book. Export to Excel or PDF.</p></div></div>
+      <div class="feat"><img src="images/dashboard-dark.jpg" alt="Dashboard in dark mode" loading="lazy"><div class="t"><b>The portfolio at a glance</b><p>Outstanding balance, collections against target, releases and portfolio at risk, across all branches.</p></div></div>
+      <div class="feat"><div class="phone"><img src="images/mobile.jpg" alt="Collector phone screen" loading="lazy"></div><div class="t"><b>Collectors carry the route</b><p>Phone screens with today's collectibles and each client's balance. View only, so the books stay in the office.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What we build for you</h2>
+    <p class="sub">Every lending company computes a little differently. We set the system up the way you already work.</p>
+    <ul class="list">
+      <li>Your products, interest, penalties and rebates, computed your way</li>
+      <li>Your official receipts, vouchers and report formats</li>
+      <li>Access by role: cashiering, loans, management and collectors</li>
+      <li>One system for every branch</li>
+      <li>Training for your staff</li>
+      <li>Help moving off your old system</li>
+    </ul>
+  </section>
+
+  <section id="book">
+    <h2>Book a demo</h2>
+    <p class="sub">Pick a time for a 20-minute call. We'll walk you through the system with your own products and branch setup in mind.</p>
+    <!-- shortcut: email instead of a calendar; swap in a booking-page iframe once there is one -->
+    <a class="btn" href="mailto:aldrinmundovega@gmail.com?subject=Loan%20system%20demo&amp;body=Hi%20Aldrin%2C%0A%0AI%27d%20like%20a%20demo%20of%20the%20loan%20system.%0A%0ACompany%3A%20%0ANumber%20of%20branches%3A%20%0APreferred%20day%20and%20time%3A%20%0A">Email to book a demo</a>
+  </section>
+
+  <footer>Aldrin Vega · Loan systems for lending companies</footer>
+</div>
+</body>
+</html>
